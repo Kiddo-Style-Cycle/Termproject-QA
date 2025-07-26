@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen pt-20">
+    <section className="pt-20">
       <div className="w-screen h-full mx-auto px-6 lg:gap-x-20 bg-[#FFECF4] flex flex-col lg:flex-row items-center justify-center pt-10">
         {/* LEFT CONTENT */}
         <div className="text-center max-w-lg pb-10">
