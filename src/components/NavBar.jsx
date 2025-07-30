@@ -33,7 +33,7 @@ const NavBar = () => {
                   ${
                     isActive
                       ? "before:opacity-100 before:scale-100"
-                      : "hover:before:opacity-100 hover:before:scale-100 before:opacity-0 before:scale-90"
+                      : "hover:before:opacity-100 hover:b efore:scale-100 before:opacity-0 before:scale-90"
                   }`
               }
             >
