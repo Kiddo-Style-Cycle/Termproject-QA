@@ -2,7 +2,7 @@ import LearnHero from "../../assets/images/HeroL.png";
 
 const HeroL = () => {
   return (
-    <section className="mt-0 pt-[80px] md:pt-[88px] pb-[100px] sm:pb-[120px]">
+    <section className="mt-0 pt-[80px] md:pt-[88px]">
       <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 bg-[#4CAF50] flex flex-col lg:flex-row items-center justify-center gap-6 sm:gap-8 lg:gap-12 xl:gap-20 py-8 sm:py-12 lg:py-16">
         
         {/* LEFT CONTENT */}
