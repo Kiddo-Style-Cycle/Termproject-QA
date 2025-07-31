@@ -1,8 +1,11 @@
 import React from 'react'
+import HeroL from '../components/LearnSections/HeroL'
 
 const Learn = () => {
   return (
-    <div>Learn</div>
+    <div className="min-h-screen w-screen">
+      <HeroL />
+    </div>
   )
 }
 
