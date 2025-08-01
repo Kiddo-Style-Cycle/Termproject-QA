@@ -1,4 +1,3 @@
-import React from "react";
 import HeroL from "../components/LearnSections/HeroL";
 import EarthFriendly from "../components/LearnSections/EarthFriendly";
 import Questions from "../components/LearnSections/Questions";
