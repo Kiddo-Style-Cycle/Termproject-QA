@@ -8,13 +8,13 @@ const EarthFriendly = () => {
       <div className="max-w-6xl mx-auto">
         {/* Green Badge */}
         <div className="flex justify-center mb-8">
-          <div className="inline-flex items-center px-6 py-3 bg-white border-2 border-[#4CAF50] rounded-lg">
+          <div className="inline-flex items-center px-6 py-3 bg-white border-2 border-[#4CAF50] rounded-[20px]">
             <span className="text-[#4CAF50] font-medium text-xl winky-font">Clothes Trading</span>
           </div>
         </div>
 
         {/* Section Title */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-center text-[#1E1E1E] mb-16 winky-font">
+        <h2 className="text-3xl md:text-4xl font-medium text-center text-[#1E1E1E] mb-16 winky-font">
           All About Earth-Friendly Fashion
         </h2>
         
