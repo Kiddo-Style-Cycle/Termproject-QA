@@ -5,7 +5,6 @@ const Hero = () => {
   return (
     <section className="pt-20">
       <div className="w-screen h-full mx-auto px-6 lg:gap-x-20 bg-[#FFECF4] flex flex-col lg:flex-row items-center justify-center pt-10">
-        
         {/* LEFT CONTENT */}
         <div className="text-center max-w-lg pb-10">
           <h1 className="text-4xl md:text-5xl font-bold text-[#1E1E1E] winky-font mb-4">
