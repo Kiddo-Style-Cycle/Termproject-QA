@@ -3,6 +3,7 @@ import HeroL from "../components/LearnSections/HeroL";
 import EarthFriendly from "../components/LearnSections/EarthFriendly";
 import Questions from "../components/LearnSections/Questions";
 import Problem from "../components/LearnSections/Problem";
+import BetterFabric from "../components/LearnSections/BetterFabric";
 
 const Learn = () => {
   return (
@@ -11,6 +12,7 @@ const Learn = () => {
       <EarthFriendly />
       <Questions />
       <Problem />
+      <BetterFabric />
     </div>
   );
 };
