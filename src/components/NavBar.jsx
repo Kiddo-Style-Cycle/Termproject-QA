@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import MobileMenu from "./MobileNav";
 import Logo from "../assets/images/Logo.png";
 
 const NavBar = () => {
@@ -11,7 +12,7 @@ const NavBar = () => {
 
   return (
     <nav className="bg-[#FAFAFA] w-full fixed top-0 left-0 z-10">
-      <div className="max-w-[1440px] h-[88px] mx-auto flex items-center justify-between px-[160px]">
+        <div className="max-w-[1440px] h-20 md:h-[88px] mx-auto flex items-center justify-between px-4 md:px-[160px]"> 
         {/* LOGO */}
         <div className="w-[174px]">
           <NavLink to="/">
@@ -20,7 +21,7 @@ const NavBar = () => {
         </div>
 
         {/* NAV LINKS */}
-        <div className="flex items-center gap-[20px]">
+        <div className="hidden md:flex items-center gap-[20px]">
           {links.map(({ name, path }) => (
             <NavLink
               key={name}
@@ -41,6 +42,7 @@ const NavBar = () => {
             </NavLink>
           ))}
         </div>
+      <MobileMenu links={links}/>
       </div>
     </nav>
   );
