@@ -1,8 +1,11 @@
 import React from 'react'
+import GameStart from '../components/GameSections/GameStart'
 
 const Game = () => {
   return (
-    <div>Game</div>
+    <div>
+      <GameStart />
+    </div>
   )
 }
 
