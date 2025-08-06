@@ -23,7 +23,7 @@ export default function Game() {
     'Completed',
   ]
 
-  // Phase 1: Start screen before nav appears
+//  Started page
   if (!started) {
     return <GameStart onStart={() => setStarted(true)} />
   }
