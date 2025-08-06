@@ -69,7 +69,7 @@ const Questions = () => {
                     takes a lot of water to make just one t-shirt.
                   </strong>
                 </p>
-                <p className="text-gray-600 text-base font-semibold">
+                <p className="text-[#616161] text-base font-semibold">
                   <u>Enough for one person to drink for over 2 years!</u>
                 </p>
               </div>
