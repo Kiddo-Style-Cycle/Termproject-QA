@@ -4,7 +4,7 @@ import Lina from '../../assets/images/Lina.png';
 import Snail from '../../assets/images/Snail.png';
 import Button from '../Button';
 
-const GameStart = () => {
+const GameStart = ({ onStart }) => {
 
   return (
     <>
@@ -58,7 +58,7 @@ const GameStart = () => {
           <Button
             size="large"
             variant="outline"
-            onClick={() => {}}
+            onClick={onStart}
             className="hover:scale-105 transform transition-all duration-300"
           >
             Let's start

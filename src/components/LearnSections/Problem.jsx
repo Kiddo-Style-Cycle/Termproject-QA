@@ -1,4 +1,3 @@
-import React from "react";
 import Drop from "../../assets/images/Drop.png";
 import Trash from "../../assets/images/Trash.png";
 import Factory from "../../assets/images/Factory.png";

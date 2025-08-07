@@ -18,12 +18,12 @@ const Hero = () => {
           {/* BUTTON ON HERO SECTION  */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link to="/learn">
-              <button className="bg-[#AA0C5D] hover:bg-white text-white hover:text-[#AA0C5D] border-2 hover:border-[#AA0C5D] transition duration-300 ease-in-out font-normal text-lg winky-font px-6 py-3 rounded-[20px] w-[240px] h-[60px] hover:scale-105">
+              <button className="bg-[#AA0C5D] hover:bg-white text-white hover:text-[#B30047] border-2 hover:border-[#B30047] transition duration-300 ease-in-out font-normal text-lg winky-font px-6 py-3 rounded-[20px] w-[240px] h-[60px] hover:scale-105">
                 Unlock Lina's World
               </button>
             </Link>
             <Link to="/game">
-              <button className="border-2 border-[#AA0C5D] text-[#AA0C5D] hover:text-white hover:bg-[#AA0C5D] hover:scale-105 transition-transform duration-300 ease-in-out font-normal winky-font text-lg px-6 py-3 rounded-[20px] w-[240px] h-[60px] bg-[#FFFFFF]">
+              <button className="border-2 border-[#B30047] text-[#B30047] hover:text-white hover:bg-[#B30047] hover:scale-105 transition-transform duration-300 ease-in-out font-normal winky-font text-lg px-6 py-3 rounded-[20px] w-[240px] h-[60px] bg-[#FFFFFF]">
                 Start Play Game
               </button>
             </Link>
