@@ -1,32 +1,39 @@
+import Step1 from "../../assets/icons/step1.png"
+import Step2 from "../../assets/icons/step2.png"
+import Step3 from "../../assets/icons/step3.png"
+import Step4 from "../../assets/icons/step4.png"
+import Step5 from "../../assets/icons/step5.png"
+
+
 const CLothesLife = () => {
   const steps = [
     {
       title: "Where It Starts\nMaterial",
-      icon: "src/assets/icons/step1.png",
+      icon: Step1,
       description:
         "Clothes start with stuff like cotton (a soft plant) or plastic (from bottles). These are turned into long pieces called thread!",
     },
     {
       title: "Making Fabric",
-      icon: "src/assets/icons/step2.png",
+      icon: Step2,
       description:
         "Threads are twisted and woven together to make fabric, like the cloth in your shirt!",
     },
     {
       title: "Coloring\n& Finishing",
-      icon: "src/assets/icons/step3.png",
+      icon: Step3,
       description:
         "Fabric gets dyed in fun colors and made soft and smooth before turning into clothes.",
     },
     {
       title: "Turning Fabric\ninto Clothes",
-      icon: "src/assets/icons/step4.png",
+      icon: Step4,
       description:
         "Cloth is cut and sewn into pants, shirts, and more ready to wear!",
     },
     {
       title: "You Wear It!",
-      icon: "src/assets/icons/step5.png",
+      icon: Step5,
       description:
         "You wear your clothes, wash them, fold them, and take good care of them!",
     },
