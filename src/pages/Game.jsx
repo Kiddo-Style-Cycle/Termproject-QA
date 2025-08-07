@@ -1,31 +1,31 @@
-import { useState } from 'react'
-import Stepper, { Step } from '../animations/Stepper'
-import GameStart from '../components/GameSections/GameStart'
-import Story1    from '../components/GameSections/Story1'
-import Mission1  from '../components/GameSections/Mission1'
-import Story2    from '../components/GameSections/Story2'
-import Mission2  from '../components/GameSections/Mission2'
-import Story3    from '../components/GameSections/Story3'
-import Mission3  from '../components/GameSections/Mission3'
-import Completed from '../components/GameSections/Completed'
+import { useState } from "react";
+import Stepper, { Step } from "../animations/Stepper";
+import GameStart from "../components/GameSections/GameStart";
+import Story1 from "../components/GameSections/Story1";
+import Mission1 from "../components/GameSections/Mission1";
+import Story2 from "../components/GameSections/Story2";
+import Mission2 from "../components/GameSections/Mission2";
+import Story3 from "../components/GameSections/Story3";
+import Mission3 from "../components/GameSections/Mission3";
+import Completed from "../components/GameSections/Completed";
 
 export default function Game() {
-  const [started, setStarted] = useState(false)
-  const [currentStep, setCurrentStep] = useState(1)
-  
-  const stepLabels = [
-    'Story 1',
-    'Mission 1',
-    'Story 2',
-    'Mission 2',
-    'Story 3',
-    'Mission 3',
-    'Completed',
-  ]
+  const [started, setStarted] = useState(false);
+  const [currentStep, setCurrentStep] = useState(1);
 
-//  Started page
+  const stepLabels = [
+    "Story 1",
+    "Mission 1",
+    "Story 2",
+    "Mission 2",
+    "Story 3",
+    "Mission 3",
+    "Completed",
+  ];
+
+  //  Started page
   if (!started) {
-    return <GameStart onStart={() => setStarted(true)} />
+    return <GameStart onStart={() => setStarted(true)} />;
   }
 
   return (
@@ -33,8 +33,8 @@ export default function Game() {
       initialStep={currentStep}
       onStepChange={setCurrentStep}
       stepLabels={stepLabels}
-      backButtonProps={{ className: 'hidden' }}
-      nextButtonProps={{ className: 'hidden' }}
+      backButtonProps={{ className: "hidden" }}
+      nextButtonProps={{ className: "hidden" }}
     >
       <Step>
         <Story1 onNext={() => setCurrentStep(2)} />
@@ -46,6 +46,7 @@ export default function Game() {
 
       <Step>
         <Story2 onNext={() => setCurrentStep(4)} />
+        onBack={() => setCurrentStep(2)}
       </Step>
 
       <Step>
@@ -64,5 +65,5 @@ export default function Game() {
         <Completed />
       </Step>
     </Stepper>
-  )
+  );
 }
