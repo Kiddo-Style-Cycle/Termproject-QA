@@ -49,7 +49,7 @@ export default function Stepper({
   };
 
   return (
-    <div className="w-screen h-screen mx-auto flex flex-col items-center pt-30">
+    <div className="w-screen min-h-screen mx-auto flex flex-col items-center pt-30">
       {/* Processing bar */}
       <div
         className={`flex w-full max-w-4xl gap-6 mb-2 px-4 text-sm font-medium ${percentClassName}`}
@@ -80,7 +80,11 @@ export default function Stepper({
                     onClick={() => onIndicatorClick(stepNum)}
                     className="flex h-8 w-8 items-center justify-center rounded-full font-semibold cursor-pointer z-10"
                     animate={{
-                      backgroundColor: done ? "#B30047" : active,
+                      backgroundColor: done
+                        ? "#B30047"
+                        : active
+                        ? "#DFBCCA"
+                        : "rgba(0,0,0,0)",
                       color: done ? "#DFBCCA" : active ? "#B30047" : "#DFBCCA",
                       border: active
                         ? "2px solid #B30047"
