@@ -8,12 +8,12 @@ const Button = ({
   disabled = false,
   className = ""
 }) => {
-  // Size configurations based on Figma style guide
+  // Size configurations with responsive design
   const sizeStyles = {
-    hero: "w-[240px] h-[60px] text-xl font-medium px-6 py-3",
-    large: "w-[200px] h-[48px] text-xl font-medium px-6 py-3",
-    medium: "w-[140px] h-[48px] text-xl font-medium px-5 py-2",
-    small: "w-[100px] h-[32px] text-lg font-medium px-4 py-2"
+    hero: "w-full sm:w-[240px] h-[60px] text-lg sm:text-xl font-medium px-4 sm:px-6 py-3",
+    large: "w-full sm:w-[200px] h-[48px] text-lg sm:text-xl font-medium px-4 sm:px-6 py-3",
+    medium: "w-full sm:w-[140px] h-[48px] text-base sm:text-xl font-medium px-4 sm:px-5 py-2",
+    small: "w-full sm:w-[100px] h-[32px] text-sm sm:text-lg font-medium px-3 sm:px-4 py-2"
   };
 
   // Color variants based on the style guide
