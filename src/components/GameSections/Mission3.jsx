@@ -71,12 +71,12 @@ const Mission3 = ({ onNext, onGoBack }) => {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-6 mb-8 w-full">
               {/* Worker Happiness Indicator - Styled */}
               <div className='flex items-center bg-white rounded-xl shadow-md overflow-hidden border border-gray-100'>
-                <div className='bg-[#4CAF50] text-white px-6 py-4 font-medium font-[Inter] text-lg'>
+                <div className='bg-[#4CAF50] text-white px-6 py-4 font-medium font-[Inter] sm:text-lg text-sm'>
                   Worker Happiness
                 </div> 
-                <div className="text-lg font-medium text-[#1E1E1E] font-[Inter] bg-[#F8F9FA] px-6 py-4 flex items-center min-w-[200px]">
-                  <span className="text-xl font-bold text-[#4CAF50]">{workerHappiness}%</span>
-                  <span className="text-sm text-gray-500 ml-2 font-normal">(Let's improve it!)</span>
+                <div className="sm:text-lg text-sm font-medium text-[#1E1E1E] font-[Inter] bg-[#F8F9FA] px-6 py-4 flex items-center min-w-[200px]">
+                  <span className="sm:text-xl text-sm font-bold text-[#4CAF50]">{workerHappiness}%</span>
+                  <span className="sm:text-sm text-xs text-gray-500 ml-2 font-normal">(Let's improve it!)</span>
                 </div>
               </div>
               
