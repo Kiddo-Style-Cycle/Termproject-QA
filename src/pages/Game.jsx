@@ -78,7 +78,7 @@ export default function Game() {
       </Step>
 
       <Step>
-        <Story2 onNext={() => setCurrentStep(4)} />
+        <Story2 onNext={() => setCurrentStep(4)} onGoBack={() => setCurrentStep(2)} />
       </Step>
 
       <Step>
