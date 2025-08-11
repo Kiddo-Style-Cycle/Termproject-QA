@@ -54,7 +54,7 @@ const Mission3 = ({ onNext, onGoBack }) => {
         </div>
 
         {/* Back Button */}
-        <div className="mb-8">
+        <div className="mb-8 w-full max-w-xs mx-auto">
           <Button
             variant="outline"
             size="large"
