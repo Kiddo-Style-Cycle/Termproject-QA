@@ -4,7 +4,7 @@ import good_pay from "../../assets/images/Good_pay.png";
 import not_enough from "../../assets/images/Notenough.png";
 import very_good_pay from "../../assets/images/Verygoodpay.png";
 
-import dirty_unsafe from "../../assets/images/Dirtyandunsafe.png";
+import dirty_unsafe from "../../assets/images/Trash.png";
 import safe from "../../assets/images/Safe.png";
 import clean_safe from "../../assets/images/Safer.png";
 
