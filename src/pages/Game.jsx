@@ -17,8 +17,14 @@ import Tear3SVG from '../assets/images/tear3.svg'
 
 
 export default function Game() {
-  const [started, setStarted] = useState(false)
-  const [currentStep, setCurrentStep] = useState(1)
+  const [started, setStarted] = useState(() => {
+    const saved = localStorage.getItem('gameStarted')
+    return saved ? JSON.parse(saved) : false
+  })
+  const [currentStep, setCurrentStep] = useState(() => {
+    const saved = localStorage.getItem('gameCurrentStep')
+    return saved ? parseInt(saved) : 1
+  })
   const [imagesLoaded, setImagesLoaded] = useState(false)
   
   const stepLabels = [
@@ -29,6 +35,15 @@ export default function Game() {
     'Story 3',
     'Mission 3',
   ]
+
+  // Save game state to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem('gameStarted', JSON.stringify(started))
+  }, [started])
+
+  useEffect(() => {
+    localStorage.setItem('gameCurrentStep', currentStep.toString())
+  }, [currentStep])
 
   // Preload critical images for Mission 1
   useEffect(() => {
@@ -55,6 +70,14 @@ export default function Game() {
 
     preloadImages()
   }, [])
+
+  // Reset game progress (useful for testing or restart functionality)
+  const resetGame = () => {
+    localStorage.removeItem('gameStarted')
+    localStorage.removeItem('gameCurrentStep')
+    setStarted(false)
+    setCurrentStep(1)
+  }
 
 //  Started page
   if (!started) {
