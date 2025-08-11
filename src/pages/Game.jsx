@@ -41,7 +41,7 @@ export default function Game() {
       </Step>
 
       <Step>
-        <Mission1 onComplete={() => setCurrentStep(3)} />
+        <Mission1 onNext={() => setCurrentStep(3)} onGoBack={() => setCurrentStep(1)} />
       </Step>
 
       <Step>
@@ -49,15 +49,15 @@ export default function Game() {
       </Step>
 
       <Step>
-        <Mission2 onComplete={() => setCurrentStep(5)} />
+        <Mission2 onNext={() => setCurrentStep(5)} onGoBack={() => setCurrentStep(3)} />
       </Step>
 
       <Step>
-        <Story3 onNext={() => setCurrentStep(6)} />
+        <Story3 onNext={() => setCurrentStep(6)} onGoBack={() => setCurrentStep(4)} />
       </Step>
 
       <Step>
-        <Mission3 onComplete={() => setCurrentStep(7)} />
+        <Mission3 onNext={() => setCurrentStep(7)} onGoBack={() => setCurrentStep(5)} />
       </Step>
 
       <Step>
