@@ -39,22 +39,22 @@ const Mission3 = ({ onNext, onGoBack }) => {
       
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 flex flex-col items-center pb-8 sm:pb-12 lg:pb-16">
         {/* Mission Header */}
-        <div className="text-center mb-8 mt-10">
-          <h1 className="text-4xl lg:text-5xl font-bold winky-font mb-6 text-[#1E1E1E]">
+        <div className="text-center mb-6 sm:mb-8 mt-6 sm:mt-10">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold winky-font mb-6 sm:mb-10 text-[#1E1E1E]">
             Make a Happy Factory
           </h1>
-          <div className="max-w-2xl mx-auto">
-            <p className="text-lg text-[#1E1E1E] mb-2">
+          <div className="max-w-xl sm:max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-[#1E1E1E] mb-2">
               Change how much workers get paid and how safe the factory is.
             </p>
-            <p className="text-lg text-[#1E1E1E]">
+            <p className="text-base sm:text-lg text-[#1E1E1E]">
               Let's see if we can make the workers feel happier!
             </p>
           </div>
         </div>
 
         {/* Back Button */}
-        <div className="mb-8 w-full max-w-xs mx-auto">
+        <div className="mb-6 sm:mb-8 w-full max-w-xs mx-auto">
           <Button
             variant="outline"
             size="large"
