@@ -3,7 +3,7 @@ import React from 'react';
 const Button = ({ 
   children,
   size = "large", // large, medium, small
-  variant = "primary", // primary, outline, secondary, green, green-dark, orange, orange-dark, orange-light
+  variant = "primary", // primary, outline, secondary, green, green_outline, green-dark, orange, orange-dark, orange-light
   onClick,
   disabled = false,
   className = ""
@@ -22,6 +22,7 @@ const Button = ({
     primary: "bg-[#b30047] hover:bg-[#9a003d] text-white",
     outline: "border-2 border-[#b30047] text-[#b30047] hover:bg-[#b30047] hover:text-white",
     secondary: "bg-[#6b1835] hover:bg-[#5a1429] text-white", // Darker pink variant
+    green_outline: "border-2 border-[#4CAF50] text-[#4CAF50] hover:bg-[#4CAF50] hover:text-white",
     green: "bg-[#4CAF50] hover:bg-[#22c55e] text-white",
     "green-dark": "bg-[#16a34a] hover:bg-[#15803d] text-white",
     orange: "bg-[#B36F00] hover:bg-[#d97706] text-white",
