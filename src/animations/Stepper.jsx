@@ -49,17 +49,17 @@ export default function Stepper({
   };
 
   return (
-    <div className="w-screen min-h-screen mx-auto flex flex-col items-center pt-30">
+    <div className="w-screen min-h-screen mx-auto flex flex-col items-center pt-30 sm:pt-16 lg:pt-30">
       {/* Processing bar */}
       <div
-        className={`flex w-full max-w-4xl gap-6 mb-2 px-4 text-sm font-medium ${percentClassName}`}
+        className={`flex w-full max-w-4xl gap-3 sm:gap-6 mb-2 px-2 sm:px-4 text-xs sm:text-sm font-medium ${percentClassName}`}
       >
         <span className="text-[#1E1E1E]">Processing</span>
         <span className="text-[#B30047]">{progress}%</span>
       </div>
       {/* Step indicators */}
-      <div className={`w-full max-w-4xl px-4 ${stepCircleContainerClassName}`}>
-        <div className={`${stepContainerClassName} flex w-full items-center`}>
+      <div className={`w-full max-w-4xl px-2 sm:px-4 ${stepCircleContainerClassName}`}>
+        <div className={`${stepContainerClassName} flex w-full items-center justify-center gap-4 sm:justify-start`}>
           {stepsArray.map((_, idx) => {
             const stepNum = idx + 1;
             const done = stepNum < currentStep;
@@ -78,7 +78,7 @@ export default function Stepper({
                 <div className="flex flex-col items-center relative flex-shrink-0">
                   <motion.div
                     onClick={() => onIndicatorClick(stepNum)}
-                    className="flex h-8 w-8 items-center justify-center rounded-full font-semibold cursor-pointer z-10"
+                    className="flex h-6 w-6 sm:h-8 sm:w-8 items-center justify-center rounded-full font-semibold cursor-pointer z-10 text-xs sm:text-sm"
                     animate={{
                       backgroundColor: done
                         ? "#B30047"
@@ -95,15 +95,17 @@ export default function Stepper({
                     {indicator}
                   </motion.div>
 
-                  {/* Label */}
-                  <div className="mt-2 text-xs text-[#989898] text-center max-w-full truncate">
+                  {/* Label - Show only active step on mobile, all labels on desktop */}
+                  <div className={`mt-1 sm:mt-2 text-xs sm:text-xs text-[#989898] text-center max-w-full truncate ${
+                    active ? 'block' : 'hidden sm:block'
+                  }`}>
                     {label}
                   </div>
                 </div>
 
-                {/* Connector line between steps */}
+                {/* Connector line between steps - Hidden on mobile */}
                 {idx < totalSteps - 1 && (
-                  <div className="flex-1 h-px mx-2 relative">
+                  <div className="hidden sm:flex flex-1 h-px mx-2 relative justify-center items-center">
                     <div className="absolute top-1/2 left-0 right-0 h-px bg-[#DFBCCA] transform -translate-y-1/2" />
                     <motion.div
                       className="absolute top-1/2 left-0 h-px bg-[#B30047] transform -translate-y-1/2"
@@ -125,7 +127,7 @@ export default function Stepper({
           isCompleted={isCompleted}
           currentStep={currentStep}
           direction={direction}
-          className={`w-full max-w-4xl ${contentClassName}`}
+          className={`w-full max-w-4xl px-2 sm:px-4 ${contentClassName}`}
         >
           {stepsArray[currentStep - 1]}
         </ContentWrapper>

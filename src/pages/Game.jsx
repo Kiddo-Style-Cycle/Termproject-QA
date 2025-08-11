@@ -7,7 +7,7 @@ import Story2    from '../components/GameSections/Story2'
 import Mission2  from '../components/GameSections/Mission2'
 import Story3    from '../components/GameSections/Story3'
 import Mission3  from '../components/GameSections/Mission3'
-import Completed from '../components/GameSections/Completed'
+
 
 export default function Game() {
   const [started, setStarted] = useState(false)
@@ -20,7 +20,6 @@ export default function Game() {
     'Mission 2',
     'Story 3',
     'Mission 3',
-    'Completed',
   ]
 
 //  Started page
@@ -60,9 +59,6 @@ export default function Game() {
         <Mission3 onNext={() => setCurrentStep(7)} onGoBack={() => setCurrentStep(5)} />
       </Step>
 
-      <Step>
-        <Completed />
-      </Step>
     </Stepper>
   )
 }
