@@ -20,6 +20,8 @@ export default function Stepper({
   disableStepIndicators = false,
 }) {
   const [currentStep, setCurrentStep] = useState(initialStep);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  
   useEffect(() => {
     setCurrentStep(initialStep);
   }, [initialStep]);
@@ -36,13 +38,17 @@ export default function Stepper({
   const updateStep = (newStep) => {
     // This prevents going back to a previous step (can be removed if you want to allow going back)
     if (newStep < currentStep) return;
+    setIsTransitioning(true);
     setCurrentStep(newStep);
     if (newStep > totalSteps) onFinalStepCompleted();
     else onStepChange(newStep);
+    
+    // Reset transition state after animation completes
+    setTimeout(() => setIsTransitioning(false), 200);
   };
 
   const onIndicatorClick = (stepNum) => {
-    if (!disableStepIndicators && stepNum !== currentStep) {
+    if (!disableStepIndicators && stepNum !== currentStep && !isTransitioning) {
       setDirection(stepNum > currentStep ? 1 : -1);
       updateStep(stepNum);
     }
@@ -56,6 +62,9 @@ export default function Stepper({
       >
         <span className="text-[#1E1E1E]">Processing</span>
         <span className="text-[#B30047]">{progress}%</span>
+        {isTransitioning && (
+          <span className="text-[#B30047] animate-pulse">Loading...</span>
+        )}
       </div>
       {/* Step indicators */}
       <div className={`w-full max-w-4xl px-2 sm:px-4 ${stepCircleContainerClassName}`}>
@@ -185,7 +194,7 @@ function SlideTransition({ children, custom: dir, onHeightReady }) {
       initial="enter"
       animate="center"
       exit="exit"
-      transition={{ duration: 0.4 }}
+      transition={{ duration: 0.2 }}
       className="w-full"
     >
       {children}
