@@ -59,7 +59,7 @@ const GameStart = ({ onStart }) => {
               size="large"
               variant="outline"
               onClick={onStart}
-              className="hover:scale-105 transform transition-all duration-300"
+              className="hover:scale-105 transform transition-all duration-300 rounded-xl"
             >
               Let's start
             </Button>
