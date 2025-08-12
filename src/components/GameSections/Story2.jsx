@@ -10,16 +10,17 @@ export default function Story2({ onNext, onGoBack }) {
       image: Cotton,
       label: (
         <>
-          <span className="text-[#B30047]">Organic cotton</span> is grown without
-          harmful chemicals.
+          <span className="text-[#B30047]">Organic cotton</span> is grown
+          without harmful chemicals.
         </>
       ),
     },
     {
       image: Plastic,
-       label: (
+      label: (
         <>
-          <span className="text-[#B30047]">Recycled polyester </span> turns old plastic bottles into new clothes!
+          <span className="text-[#B30047]">Recycled polyester </span> turns old
+          plastic bottles into new clothes!
         </>
       ),
     },
@@ -68,13 +69,13 @@ export default function Story2({ onNext, onGoBack }) {
           <div className="flex justify-center mb-10 gap-5">
             <button
               onClick={onGoBack}
-              className="border-2 border-[#B30047] text-[#B30047] hover:text-white hover:bg-[#B30047] hover:scale-105 transition-transform duration-300 ease-in-out font-normal winky-font text-lg px-6 py-3 rounded-[20px] w-[200px] h-[60px] bg-[#FFFFFF]"
+              className="border-2 border-[#B30047] text-[#B30047] hover:text-white hover:bg-[#B30047] hover:scale-105 transition-transform duration-300 ease-in-out font-normal winky-font rounded-[20px] text-base px-4 py-2 w-[160px] h-[48px] sm:text-lg sm:px-5 sm:py-2.5 sm:w-[180px] sm:h-[56px] md:px-6 md:py-3 md:w-[200px] md:h-[60px]"
             >
               Go back
             </button>
             <button
               onClick={onNext}
-              className="bg-[#B30047] hover:bg-white text-white hover:text-[#B30047] border-2 hover:border-[#B30047] transition duration-300 ease-in-out font-normal text-lg winky-font py-3 rounded-[20px] w-[200px] h-[60px] hover:scale-105"
+              className="bg-[#B30047] text-white border-2 border-[#B30047] hover:bg-white hover:text-[#B30047] hover:border-[#B30047] hover:scale-105 transition-transform duration-300 ease-in-out font-normal winky-font rounded-[20px] text-base px-4 py-2 w-[160px] h-[48px] sm:text-lg sm:px-5 sm:py-2.5 sm:w-[180px] sm:h-[56px] md:px-6 md:py-3 md:w-[200px] md:h-[60px]"
             >
               Mission 2
             </button>

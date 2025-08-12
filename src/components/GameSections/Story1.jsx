@@ -1,6 +1,5 @@
 import LinaSad from "../../assets/images/lina-sad.png";
 import Mirror from "../../assets/images/mirror.png";
-import GameBG from "../../assets/images/Game_BG.png";
 
 export default function Story1({ onNext }) {
   return (
@@ -25,7 +24,7 @@ export default function Story1({ onNext }) {
           <div className="flex justify-center mb-10">
             <button
               onClick={onNext}
-              className="bg-[#B30047] hover:bg-white text-white hover:text-[#B30047] border-2 hover:border-[#B30047] transition duration-300 ease-in-out font-normal text-xl winky-font py-3 rounded-[20px] w-[240px] h-[60px] hover:scale-105"
+              className="bg-[#B30047] text-white border-2 border-[#B30047] hover:bg-white hover:text-[#B30047] hover:border-[#B30047] hover:scale-105 transition-transform duration-300 ease-in-out font-normal winky-font rounded-[20px] text-base px-4 py-2 w-[160px] h-[48px] sm:text-lg sm:px-5 sm:py-2.5 sm:w-[180px] sm:h-[56px] md:px-6 md:py-3 md:w-[200px] md:h-[60px]"
             >
               Mission 1
             </button>
