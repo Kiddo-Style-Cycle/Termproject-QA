@@ -6,6 +6,11 @@ import Socks from '../../assets/images/socks.png';
 import Puppets from '../../assets/images/puppets.png';
 import TShirt from '../../assets/images/T-shirt.png';
 import ToteBag from '../../assets/images/bag.png';
+import Lightbulb from '../../assets/icons/Lightbulb.svg';
+import Check from '../../assets/icons/CheckCircle.svg';
+import Beets from '../../assets/images/Beets.png';
+import Onion from '../../assets/images/Tumeric.png';
+import Cabbage from '../../assets/images/RedCabbage.png';
 
 
 const HomeFashion = () => {
@@ -13,7 +18,7 @@ const HomeFashion = () => {
     <section className="w-full bg-[#FFF0D2] py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Main Title */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 mt-8">
           <h1 className="text-[#121717] text-2xl md:text-4xl font-medium winky-font mb-4">
             <span className="text-[#B36F00] mb-2">At Home</span><br/> Fun With Fashion
           </h1>
@@ -34,7 +39,7 @@ const HomeFashion = () => {
             {/* Transformation Examples */}
             <div className="space-y-4 mb-6">
                 {/* Jeans to Pocket Organizer */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 justify-center">
                   <div className="relative">
                     <img src={Jeans} alt="Jeans" className="w-[160px] h-auto object-contain" />
                     <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-center">
@@ -53,7 +58,7 @@ const HomeFashion = () => {
                 </div>
 
               {/* Socks to Puppets */}
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 justify-center">
                   <div className="relative">
                     <img src={Socks} alt="Socks" className="w-[160px] h-auto object-contain" />
                     <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-center">
@@ -72,7 +77,7 @@ const HomeFashion = () => {
                 </div>
 
               {/* T-shirt to Tote Bag */}
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 justify-center">
                   <div className="relative">
                     <img src={TShirt} alt="Socks" className="w-[160px] h-auto object-contain" />
                     <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-center">
@@ -93,117 +98,114 @@ const HomeFashion = () => {
             </div>
 
             {/* Note */}
-            <div className="flex items-start gap-2 bg-[#FAFAFA] p-3 rounded-full">
-              <div className="text-yellow-500 mt-1">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z" />
-                </svg>
+            <div className="flex items-start gap-2 bg-[#FAFAFA] h-12 w-fit p-4 rounded-full justify-center items-center">
+              <div>
+                <img src={Lightbulb} alt="Lightbulb" className="w-5 h-5 object-contain " />
               </div>
-              <p className="text-sm text-gray-700">
+              <p className="text-sm text-[#1E1E1E] font-normal">
                 Ask an adult for help if you need scissors or glue!
               </p>
             </div>
           </div>
 
           {/* Section 2: Closet Detective */}
-          <div className="bg-white rounded-2xl p-6 shadow-lg">
-            <h2 className="text-2xl md:text-3xl font-bold text-blue-600 winky-font mb-3">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-medium text-[#121717] winky-font mb-3 text-center">
               Closet Detective
             </h2>
-            <p className="text-gray-700 font-['Inter'] text-lg mb-6">
+            <p className="text-[#747474] font-['Inter'] text-base mb-6 text-center">
               Become a fashion detective! Look in your closet and sort your clothes
             </p>
             
             {/* Checklist */}
-            <div className="space-y-4 mb-6">
-              <div className="flex items-center gap-3">
-                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
+            <div className="space-y-4 mb-6 flex flex-col items-start">
+                <div className="flex items-start gap-3">
+                  <div className="w-12 h-12 bg-[#FFE6B3] rounded-full flex items-center justify-center">
+                    <img src={Check} alt="Check" className="w-8 h-8 object-contain" />
+                  </div>
+                  <div className="flex flex-col">
+                    <p className="text-[#B36F00] font-bold text-base">Still Awesome?</p>
+                    <p className="text-[#747474] font-normal text-base">Keep it!</p>
+                    </div>
                 </div>
-                <span className="text-gray-700 font-medium">Still Awesome? Keep it!</span>
+              
+              <div className="flex items-center gap-3">
+                <div className="w-12 h-12 bg-[#FFE6B3] rounded-full flex items-center justify-center">
+                  <img src={Check} alt="Check" className="w-8 h-8 object-contain" />
+                </div>
+                <div className="flex flex-col">
+                    <p className="text-[#B36F00] font-bold text-base">Too Small or Don't Wear?</p>
+                    <p className="text-[#747474] font-normal text-base">Give to someone else!</p>
+                    </div>
               </div>
               
               <div className="flex items-center gap-3">
-                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
+                <div className="w-12 h-12 bg-[#FFE6B3] rounded-full flex items-center justify-center">
+                  <img src={Check} alt="Check" className="w-8 h-8 object-contain" />
                 </div>
-                <span className="text-gray-700 font-medium">Too Small or Don't Wear? Give to someone else!</span>
-              </div>
-              
-              <div className="flex items-center gap-3">
-                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                  <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <span className="text-gray-700 font-medium">Worn Out? Turn it into something fun!</span>
+                <div className="flex flex-col">
+                    <p className="text-[#B36F00] font-bold text-base">Worn Out?</p>
+                    <p className="text-[#747474] font-normal text-base">Turn it into something fun!</p>
+                    </div>
               </div>
             </div>
 
             {/* Note */}
-            <div className="flex items-start gap-2 bg-yellow-50 p-3 rounded-full">
-              <div className="text-yellow-500 mt-1">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z" />
-                </svg>
+            <div className="flex items-start gap-2 bg-[#FAFAFA] h-12 p-4 rounded-full w-fit">
+              <div>
+                <img src={Lightbulb} alt="Lightbulb" className="w-5 h-5 object-contain " />
               </div>
-              <p className="text-sm text-gray-700">
+              <p className="text-sm text-[#1E1E1E] font-normal">
                 Use stickers or labels for each pile!
               </p>
             </div>
           </div>
 
           {/* Section 3: Nature Dye Lab */}
-          <div className="bg-white rounded-2xl p-6 shadow-lg">
-            <h2 className="text-2xl md:text-3xl font-bold text-purple-600 winky-font mb-3">
+          <div>
+          <h2 className="text-2xl md:text-3xl font-medium text-[#121717] winky-font mb-3 text-center">
               Nature Dye Lab
             </h2>
-            <p className="text-gray-700 font-['Inter'] text-lg mb-6">
-              Make colorful dyes from your kitchen!
+            <p className="text-[#747474] font-['Inter'] text-base mb-6 text-center">
+              Become a fashion detective! Look in your closet and sort your clothes
             </p>
             
             {/* Dye Cards */}
             <div className="space-y-4 mb-6">
-              {/* Red Dye */}
-              <div className="bg-red-700 rounded-lg p-4 text-white">
-                <h3 className="font-bold text-lg mb-2">Red</h3>
-                <div className="w-12 h-12 bg-red-600 rounded-lg mb-2 flex items-center justify-center">
-                  <span className="text-xs">🍎</span>
+            {/* Red Dye */} 
+              <div className="relative">
+                <img src={Beets} alt="Beets" className="w-full h-auto object-contain" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center">
+                  <h3 className="bg-red-500 font-bold text-sm mb-2 text-white rounded-full px-4 py-1 w-fit">Red</h3>
+                  <p className="text-base text-white font-normal">Beets or berries</p>
                 </div>
-                <p className="text-sm">Beets or berries</p>
               </div>
 
               {/* Yellow Dye */}
-              <div className="bg-yellow-600 rounded-lg p-4 text-white">
-                <h3 className="font-bold text-lg mb-2">Yellow</h3>
-                <div className="w-12 h-12 bg-yellow-500 rounded-lg mb-2 flex items-center justify-center">
-                  <span className="text-xs">🧅</span>
+              <div className="relative">
+                <img src={Onion} alt="Beets" className="w-full h-auto object-contain" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center">
+                  <h3 className="bg-yellow-500 font-bold text-sm mb-2 text-white rounded-full px-4 py-1 w-fit">Yellow</h3>
+                  <p className="text-base text-white font-normal">Turmeric or onion skins</p>
                 </div>
-                <p className="text-sm">Turmeric or onion skins</p>
               </div>
 
               {/* Blue Dye */}
-              <div className="bg-blue-700 rounded-lg p-4 text-white">
-                <h3 className="font-bold text-lg mb-2">Blue</h3>
-                <div className="w-12 h-12 bg-blue-600 rounded-lg mb-2 flex items-center justify-center">
-                  <span className="text-xs">🥬</span>
+              <div className="relative">
+                    <img src={Cabbage} alt="Beets" className="w-full h-auto object-contain" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center">
+                  <h3 className="bg-[#1370DB] font-bold text-sm mb-2 text-white rounded-full px-4 py-1 w-fit">Blue</h3>
+                  <p className="text-base text-white font-normal">Red cabbage & baking soda</p>
                 </div>
-                <p className="text-sm">Red cabbage & baking soda</p>
               </div>
             </div>
 
             {/* Note */}
-            <div className="flex items-start gap-2 bg-yellow-50 p-3 rounded-full">
-              <div className="text-yellow-500 mt-1">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z" />
-                </svg>
+            <div className="flex items-start gap-2 bg-[#FAFAFA] h-12 p-4 rounded-full">
+            <div>
+                <img src={Lightbulb} alt="Lightbulb" className="w-5 h-5 object-contain " />
               </div>
-              <p className="text-sm text-gray-700">
+              <p className="text-sm text-[#1E1E1E] font-normal">
                 Adult needed for this messy (but fun!) project!
               </p>
             </div>
