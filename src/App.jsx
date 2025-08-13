@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Learn from "./pages/Learn";
 import Game from "./pages/Game";
 import Act from "./pages/Act";
+import ScrollToTop from "./ScrollToTop";
+
 
 const App = () => {
   return (
