@@ -2,7 +2,7 @@ import React from 'react';
 import HeroBG from '../../assets/images/HeroBG.png';
 import RecyclingHeart from '../../assets/images/Heart.png';
 import Globe from '../../assets/images/Globe.png';
-import SuperheroBoy from '../../assets/images/Super_hero.png';
+import SuperheroBoy from '../../assets/images/Super_Hero.png';
 
 const FashionHero = () => {
   return (
