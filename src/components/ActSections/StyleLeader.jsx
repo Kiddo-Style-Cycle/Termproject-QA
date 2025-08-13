@@ -33,7 +33,7 @@ const FashionFacts = () => {
   ];
 
   return (
-    <section className="py-0 px-6 relative pb-10 pt-15">
+    <section className="py-0 px-6 relative pb-10">
       <div className="absolute inset-0 flex flex-col">
         <div className="h-full w-screen bg-[#B36F00]"></div>
       </div>
