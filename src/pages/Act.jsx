@@ -1,9 +1,11 @@
-import React from 'react'
+import HeroA from "../components/ActSections/HeroA";
 
 const Act = () => {
   return (
-    <div>Act</div>
-  )
-}
+    <div className="min-h-screen w-screen">
+      <HeroA />
+    </div>
+  );
+};
 
 export default Act
