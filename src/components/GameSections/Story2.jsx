@@ -2,7 +2,7 @@ import Cotton from "../../assets/images/cotton.png";
 import Plastic from "../../assets/images/plastic.png";
 import Thinking from "../../assets/images/thinking.png";
 import Lina from "../../assets/images/lina-holdingclothes.png";
-import GameBG from "../../assets/images/Game_BG.png";
+
 
 export default function Story2({ onNext, onGoBack }) {
   const Story = [
@@ -28,15 +28,6 @@ export default function Story2({ onNext, onGoBack }) {
 
   return (
     <>
-      {/* Background */}
-      <div className="fixed inset-0 -z-10 bg-no-repeat bg-center h-screen">
-        <img
-          src={GameBG}
-          alt="Game background"
-          className="object-cover h-full w-full"
-        />
-      </div>
-
       {/* Content Section */}
       <section className="h-full w-full flex flex-col items-center justify-center ">
         <div className="z-10 max-w-4xl mx-auto px-6 flex flex-col justify-center">

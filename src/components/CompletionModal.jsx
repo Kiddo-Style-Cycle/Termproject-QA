@@ -1,4 +1,3 @@
-import React from 'react';
 import Lina from "../assets/images/Lina-happy.png";
 import Button from './Button';
 
