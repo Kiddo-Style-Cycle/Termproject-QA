@@ -9,6 +9,11 @@ import SuperPower from "../components/ActSections/SuperPower"
 const Act = () => {
   return (
     <>
+    <HeroA />
+    <FashionHero />
+    <HomeFashion />
+    <TeamUp />
+    <SuperPower />
     <StyleLeader/>
     <FashionChallenge/>
     </>
