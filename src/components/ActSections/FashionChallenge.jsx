@@ -1,4 +1,10 @@
 import { useState, useMemo } from "react";
+import SmileyBlank from "../../assets/icons/SmileyBlank.svg"
+import Smiley from "../../assets/icons/Smiley.svg"
+import SmileyWink from "../../assets/icons/SmileyWink.svg"
+import Heart from "../../assets/icons/Heart.svg"
+import Confetti from "../../assets/icons/Confetti.svg"
+
 
 const TASKS = [
   "",
@@ -10,11 +16,11 @@ const TASKS = [
 ];
 
 const STAGES = [
-  { at: 0, emoji: "😐", label: "Start" },
-  { at: 25, emoji: "🙂", label: "Nice" },
-  { at: 50, emoji: "😄", label: "Half" },
-  { at: 75, emoji: "😍", label: "Almost" },
-  { at: 100, emoji: "🏆", label: "Done" },
+  { at: 0, emoji: <img src={SmileyBlank} alt="icon" className="h-7 w-7" /> , label: "Start" },
+  { at: 25, emoji: <img src={Smiley} alt="icon" className="h-7 w-7" /> , label: "Nice" },
+  { at: 50, emoji: <img src={SmileyWink} alt="icon" className="h-7 w-7" /> , label: "Half" },
+  { at: 75, emoji: <img src={Heart} alt="icon" className="h-7 w-7" /> , label: "Almost" },
+  { at: 100, emoji: <img src={Confetti} alt="icon" className="h-7 w-7" /> , label: "Done" },
 ];
 
 export default function FashionChallenge() {
