@@ -10,9 +10,10 @@ import ScrollToTop from "./ScrollToTop";
 
 const App = () => {
   return (
-   
+    <>
+    <ScrollToTop />
       <Routes>
-        <ScrollToTop />
+        
         <Route path="/" element={<Layout/>}>
         <Route index element={<Home />} />
         <Route path="learn" element={<Learn />} />
@@ -20,7 +21,7 @@ const App = () => {
         <Route path="act" element={<Act />} />
         </Route>
       </Routes>
-   
+   </>
   );
 };
 
