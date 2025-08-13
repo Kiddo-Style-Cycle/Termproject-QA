@@ -144,7 +144,7 @@ export default function FashionChallenge() {
 
             {/* Emoji stage row */}
             <div className="mt-5 w-full">
-              <div className="mx-auto w-full max-w-[560px] px-10">
+              <div className="mx-auto w-full max-w-[580px] px-10">
                 <div className="flex w-full items-center justify-between text-2xl sm:text-3xl">
                   {STAGES.map((s, idx) => {
                     const active = idx === stageIndex;
