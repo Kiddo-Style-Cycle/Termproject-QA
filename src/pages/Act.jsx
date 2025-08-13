@@ -14,7 +14,6 @@ const Act = () => {
       <HomeFashion />
       <TeamUp />
       <StyleLeader />
-
       <FashionChallenge />
       <SuperPower />
     </>

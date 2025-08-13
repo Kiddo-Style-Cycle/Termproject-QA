@@ -13,6 +13,7 @@ const TASKS = [
   "Make a new outfit from old stuff",
   "Look up one eco-friendly fashion brand",
   "Teach a friend or grown-up what you learned",
+  "",
 ];
 
 const STAGES = [
@@ -146,7 +147,7 @@ export default function FashionChallenge() {
               </ul>
 
               {/* Emoji stage row */}
-              <div className="mt-5 w-full">
+              <div className="w-full">
                 <div className="mx-auto w-full max-w-[560px] px-10">
                   <div className="flex w-full items-center justify-between text-2xl sm:text-3xl">
                     {STAGES.map((s, idx) => {
