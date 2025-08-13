@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../Button";
 import Modal from "../../components/Modal";
 import good_pay from "../../assets/images/Good_pay.png";
@@ -41,6 +42,8 @@ const Mission3 = ({ onNext, onGoBack }) => {
       );
     }
   };
+
+   const navigate = useNavigate();
 
   return (
     <section className="w-full bg-cover bg-center bg-no-repeat flex flex-col items-center justify-start relative py-8">
@@ -235,7 +238,7 @@ const Mission3 = ({ onNext, onGoBack }) => {
             variant: "primary",
             onClick: () => {
               setShowSuccess(false);
-              onNext?.();
+              navigate("/Act");;
             },
           },
         ]}

@@ -5,6 +5,7 @@ import TeamUp from "../components/ActSections/TeamUp";
 import StyleLeader from "../components/ActSections/StyleLeader";
 import FashionChallenge from "../components/ActSections/FashionChallenge";
 import SuperPower from "../components/ActSections/SuperPower";
+import Picture from "../components/ActSections/Picture";
 
 const Act = () => {
   return (
@@ -16,6 +17,7 @@ const Act = () => {
       <StyleLeader />
       <FashionChallenge />
       <SuperPower />
+      <Picture />
     </>
   );
 };

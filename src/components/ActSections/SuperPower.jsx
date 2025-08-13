@@ -21,7 +21,7 @@ const SUBTASKS = [
   "",
 ];
 
-export default function FashionChallenge() {
+export default function SuperPower() {
   const [checked, setChecked] = useState(() => TASKS.map(() => false));
 
   const isBlank = (t) => !t || !t.trim();
