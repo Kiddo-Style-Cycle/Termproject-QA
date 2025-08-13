@@ -10,6 +10,7 @@ const App = () => {
   return (
    
       <Routes>
+        <ScrollToTop />
         <Route path="/" element={<Layout/>}>
         <Route index element={<Home />} />
         <Route path="learn" element={<Learn />} />
