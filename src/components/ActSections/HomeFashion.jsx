@@ -2,6 +2,11 @@ import React from 'react';
 import Jeans from '../../assets/images/Jeans.png';
 import PocketOrganizer from '../../assets/images/PocketOrganizer.png';
 import Arrow from '../../assets/images/ArrowFatLineRight.svg';
+import Socks from '../../assets/images/socks.png';
+import Puppets from '../../assets/images/puppets.png';
+import TShirt from '../../assets/images/T-shirt.png';
+import ToteBag from '../../assets/images/bag.png';
+
 
 const HomeFashion = () => {
   return (
@@ -32,8 +37,8 @@ const HomeFashion = () => {
                 <div className="flex items-center gap-4">
                   <div className="relative">
                     <img src={Jeans} alt="Jeans" className="w-[160px] h-auto object-contain" />
-                    <div className="absolute bottom-3 left-2 text-center">
-                      <p className="text-red-500 font-medium text-xs">Jeans</p>
+                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-center">
+                      <p className="text-white font-normal text-base">Jeans</p>
                     </div>
                   </div>
                   <div className="flex items-center justify-center">
@@ -41,41 +46,50 @@ const HomeFashion = () => {
                   </div>
                   <div className="relative">
                     <img src={PocketOrganizer} alt="Pocket Organizer" className="w-[160px] h-auto object-contain" />
-                    <div className="absolute bottom-3 left-2 text-center">
-                      <p className="text-red-500 font-medium text-xs">Pocket Organizer</p>
+                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-center">
+                      <p className="text-white font-normal text-base">Pocket Organizer</p>
                     </div>
                   </div>
                 </div>
 
               {/* Socks to Puppets */}
-              <div className="flex items-center gap-3">
-                <div className="w-16 h-16 bg-purple-200 rounded-lg flex items-center justify-center">
-                  <span className="text-purple-600 font-medium text-sm">Socks</span>
+              <div className="flex items-center gap-4">
+                  <div className="relative">
+                    <img src={Socks} alt="Socks" className="w-[160px] h-auto object-contain" />
+                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-center">
+                      <p className="text-white font-normal text-base">Socks</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <img src={Arrow} alt="Arrow" className="w-6 h-6 object-contain" />
+                  </div>
+                  <div className="relative">
+                    <img src={Puppets} alt="Puppets" className="w-[160px] h-auto object-contain" />
+                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-center">
+                      <p className="text-white font-normal text-base">Puppets</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-purple-500">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <div className="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center">
-                  <span className="text-purple-600 font-medium text-xs text-center">Funny puppets</span>
-                </div>
-              </div>
 
               {/* T-shirt to Tote Bag */}
-              <div className="flex items-center gap-3">
-                <div className="w-16 h-16 bg-gray-200 rounded-lg flex items-center justify-center">
-                  <span className="text-gray-600 font-medium text-sm">T-shirt</span>
+              <div className="flex items-center gap-4">
+                  <div className="relative">
+                    <img src={TShirt} alt="Socks" className="w-[160px] h-auto object-contain" />
+                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-center">
+                      <p className="text-white font-normal text-base">Socks</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <img src={Arrow} alt="Arrow" className="w-6 h-6 object-contain" />
+                  </div>
+                  <div className="relative">
+                    <img src={ToteBag} alt="Puppets" className="w-[160px] h-auto object-contain" />
+                    <div className="absolute bottom-2 left-1/2 -translate-x-1/2 text-center">
+                      <p className="text-white font-normal text-base">Puppets</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-gray-500">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <div className="w-16 h-16 bg-gray-100 rounded-lg flex items-center justify-center">
-                  <span className="text-gray-600 font-medium text-xs text-center">Tote Bag</span>
-                </div>
-              </div>
+              
             </div>
 
             {/* Note */}
