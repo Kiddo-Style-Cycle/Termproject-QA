@@ -4,19 +4,20 @@ import HomeFashion from "../components/ActSections/HomeFashion";
 import TeamUp from "../components/ActSections/TeamUp";  
 import StyleLeader from "../components/ActSections/StyleLeader"
 import FashionChallenge from "../components/ActSections/FashionChallenge"
+import SuperPower from "../components/ActSections/SuperPower"
 
 const Act = () => {
   return (
-    <div className="min-h-screen w-screen">
-      <HeroA />
-      <FashionHero />
-      <HomeFashion />
-      <TeamUp />
-      <StyleLeader/>
-      <FashionChallenge/>
-
-    </div>
-  );
-};
+    <>
+    <HeroA />
+    <FashionHero />
+    <HomeFashion />
+    <TeamUp />
+    <SuperPower />
+    <StyleLeader/>
+    <FashionChallenge/>
+    </>
+  )
+}
 
 export default Act
