@@ -27,7 +27,7 @@ const ExploreSection = () => {
             imageAlt="Soft and Green clothing illustration"
             onButtonClick={() => {
               // Navigate to learn page or show more info
-              console.log('Navigate to learn page');
+              window.location.href = '/learn';
             }}
           />
           
@@ -43,7 +43,7 @@ const ExploreSection = () => {
             imageAlt="Fix It with Lina"
             onButtonClick={() => {
               // Navigate to game page or show repair activities
-              console.log('Navigate to game page');
+              window.location.href = '/game';
             }}
           />
           
@@ -59,7 +59,7 @@ const ExploreSection = () => {
             imageAlt="Be a Clothing Hero"
             onButtonClick={() => {
               // Navigate to act page or show action items
-              console.log('Navigate to act page');
+              window.location.href = '/act';
             }}
           />
         </div>

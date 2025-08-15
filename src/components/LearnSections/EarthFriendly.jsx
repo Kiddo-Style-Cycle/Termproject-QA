@@ -1,6 +1,7 @@
 import React from "react";
 import Pic1 from "../../assets/images/Pic_1.png";
 import Pic2 from "../../assets/images/Pic_2.png";
+import Pic3 from "../../assets/images/Pic_3.png";
 
 const EarthFriendly = () => {
   return (
@@ -27,14 +28,13 @@ const EarthFriendly = () => {
             <div className="flex flex-col text-center">
               <div className="relative">
                 <img
-                  src={Pic1}
+                  src={Pic3}
                   alt="Happy kids with new clothes"
                   className="w-full h-auto"
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 className="text-md sm:text-lg text-black leading-relaxed font-['Inter']">
-                    It's a fun way to get "new" clothes without going to the
-                    store.
+                    Do you have clothes you don't wear anymore?
                   </h3>
                 </div>
               </div>
@@ -70,12 +70,14 @@ const EarthFriendly = () => {
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <h3 className="text-md sm:text-lg text-black leading-relaxed font-['Inter']">
-                    Do you have clothes you don't wear anymore?
+                    It's a fun way to get "new" clothes without going to the
+                    store.
                   </h3>
                 </div>
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
